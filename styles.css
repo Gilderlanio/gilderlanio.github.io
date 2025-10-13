@@ -1,0 +1,43 @@
+:root{
+  --blue-1: #0d6efd;
+  --blue-2: #0b5ed7;
+  --soft-bg: #f7fbff;
+  --leaf: #1fa47a;
+  --card-radius: 14px;
+}
+
+body{
+  background: linear-gradient(180deg, var(--soft-bg) 0%, #ffffff 50%);
+  color: #083149;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.navbar-brand .brand-mark{
+  display:inline-block;
+  width:48px;height:48px;border-radius:10px;
+  background:linear-gradient(135deg,var(--blue-1),var(--leaf));
+  color:white;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow: 0 4px 14px rgba(10, 59, 97, 0.08);
+}
+
+.hero{
+  padding-top:40px;padding-bottom:20px;
+  background: radial-gradient(circle at left, rgba(13,110,253,0.06), transparent 30%);
+}
+
+.hero-card{ border-radius: var(--card-radius); }
+
+.card { border: none; border-radius: var(--card-radius); }
+
+.card-carousel{ background: linear-gradient(180deg, rgba(255,255,255,0.95), white); border-left:5px solid rgba(13,110,253,0.08); }
+
+.team-card, .research-card, .software-card, .article-card { transition: transform .18s ease, box-shadow .18s ease; }
+.team-card:hover, .research-card:hover, .software-card:hover, .article-card:hover{ transform: translateY(-6px); box-shadow: 0 10px 30px rgba(9, 57, 86, 0.08); }
+
+footer { background: transparent; }
+
+@media (prefers-color-scheme: dark){
+  body{ background: #031021; color: #d8eef1; }
+}
