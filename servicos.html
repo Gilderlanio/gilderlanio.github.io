@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LBCD — Laboratório de Bioinformática e Ciências de Dados</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-hub sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="index.html">
+      <img src="images/LBCD.png" alt="LBCD" style="height: 44px; width: auto;">
+      <!-- <div class="d-none d-sm-block">
+        <span class="fw-bold d-block text-dark" style="line-height: 1.1; font-size: 1.05rem;">LBCD</span>
+        <span class="font-mono-tech text-muted" style="font-size: 0.72rem;">ICB · UFPA</span>
+      </div> -->
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="linhas.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link " href="softwares.html">Softwares & Databases</a></li>
+          <li class="nav-item"><a class="nav-link " href="artigos.html">Research Papers</a></li>
+          <li class="nav-item"><a class="nav-link " href="equipe.html">Research Team</a></li>
+          <li class="nav-item"><a class="nav-link " href="servicos.html">Services & Consulting</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-hub py-5">
+  <div class="container py-lg-2">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tech"><i class="bi bi-briefcase"></i> PORTFÓLIO TÉCNICO &amp; CONSULTORIA</span>
+          <span class="badge-tech badge-emerald"><i class="bi bi-file-earmark-check"></i> PROPOSTAS &amp; EDITAIS</span>
+        </div>
+        <h1 class="display-6 fw-bold mb-3" style="color: #0F172A;">
+          Serviços de Bioinformática, Ciência de Dados e Consultoria
+        </h1>
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+          Portfólio técnico completo do Laboratório de Bioinformática e Ciências de Dados (LBCD — ICB/UFPA) estruturado para parcerias institucionais, projetos de pesquisa, propostas técnicas e submissão a editais de fomento.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#omicas" class="btn btn-sm btn-hub-outline"><i class="bi bi-dna me-1"></i>Genômica &amp; Ômicas</a>
+          <a href="#sistemas" class="btn btn-sm btn-hub-outline"><i class="bi bi-share me-1"></i>Biologia de Sistemas</a>
+          <a href="#ciencia-dados" class="btn btn-sm btn-hub-outline"><i class="bi bi-cpu me-1"></i>Ciência de Dados</a>
+          <a href="#design-experimental" class="btn btn-sm btn-hub-outline"><i class="bi bi-rulers me-1"></i>Design Experimental</a>
+          <a href="#infraestrutura" class="btn btn-sm btn-hub-outline"><i class="bi bi-hdd-stack me-1"></i>Bancos &amp; Infraestrutura</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="hero-terminal-box">
+          <div class="d-flex align-items-center gap-2 mb-2 pb-2 border-bottom border-secondary">
+            <span class="rounded-circle d-inline-block" style="width:10px;height:10px;background:#EF4444;"></span>
+            <span class="rounded-circle d-inline-block" style="width:10px;height:10px;background:#F59E0B;"></span>
+            <span class="rounded-circle d-inline-block" style="width:10px;height:10px;background:#10B981;"></span>
+            <span class="ms-2 text-secondary small">lbcd@ufpa:~/services-spec</span>
+          </div>
+          <div class="small">
+            <div><span style="color:#10B981;">$</span> cat portfolio_2026.json</div>
+            <div class="mt-1">&gt; Eixos Técnicos: <span style="color:#5EEAD4;">05 Áreas Integradas</span></div>
+            <div>&gt; Escopo: <span style="color:#5EEAD4;">27 Módulos Especializados</span></div>
+            <div>&gt; Entregáveis: <span style="color:#5EEAD4;">Pipelines, APIs, SAP &amp; DBs</span></div>
+            <div>&gt; Padrão: <span style="color:#34D399;">Reprodutível &amp; FAIR</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+  <section id="omicas" class="service-section mb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end border-bottom pb-3 mb-4 gap-2" style="border-color: var(--border-subtle) !important;">
+      <div>
+        <span class="badge-tech mb-2"><i class="bi bi-dna"></i> CAT_01</span>
+        <h2 class="fw-bold h3 mb-1">Genômica, Transcriptômica e Proteômica</h2>
+        <p class="text-secondary small mb-0">Processamento primário, montagem, anotação funcional e expressão diferencial multi-ômica.</p>
+      </div>
+      <span class="font-mono-tech small text-muted">07 serviços</span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.01</span>
+            <span class="badge-tech">FASTQ · QC</span>
+          </div>
+          <h5 class="fw-bold mb-2">Controle de Qualidade e Pré-processamento</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Avaliação de reads brutos (FASTQ), remoção de adaptadores, filtragem por qualidade (Phred score) e descontaminação de sequências.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.02</span>
+            <span class="badge-tech">GO · KEGG · Pfam</span>
+          </div>
+          <h5 class="fw-bold mb-2">Montagem e Anotação de Genomas</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Montagem de novo ou guiada por referência (reads curtos e longos), predição estrutural de genes e anotação funcional (GO, KEGG, Pfam).</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.03</span>
+            <span class="badge-tech">BAM/CRAM · VCF · GWAS</span>
+          </div>
+          <h5 class="fw-bold mb-2">Chamada e Anotação de Variantes (SNP/Indel/SV)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Mapeamento contra genoma de referência (BAM/CRAM), identificação de variantes germinativas e somáticas (VCF), predição de impacto funcional e análises de genética de populações (GWAS, ancestralidade, estrutura populacional).</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.04</span>
+            <span class="badge-tech">edgeR · DESeq2</span>
+          </div>
+          <h5 class="fw-bold mb-2">Análise de Expressão Diferencial (Bulk RNA-seq)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Quantificação de transcritos, normalização, modelagem estatística (edgeR, DESeq2) e identificação de biomarcadores ou assinaturas transcricionais.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.05</span>
+            <span class="badge-tech">scRNA-seq · CCC</span>
+          </div>
+          <h5 class="fw-bold mb-2">Transcriptômica de Célula Única (scRNA-seq / snRNA-seq)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Filtragem de células, redução de dimensionalidade, clusterização, anotação de tipos celulares, análise de trajetória (pseudotempo) e inferência de comunicação célula-célula.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.06</span>
+            <span class="badge-tech">16S/ITS · Shotgun · MAGs</span>
+          </div>
+          <h5 class="fw-bold mb-2">Metagenômica e Metatranscriptômica</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Perfilamento taxonômico (16S/ITS ou shotgun), reconstrução de genomas a partir de metagenomas (MAGs) e análise funcional de comunidades microbianas.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_01.07</span>
+            <span class="badge-tech">LC-MS/MS · PTMs</span>
+          </div>
+          <h5 class="fw-bold mb-2">Análise de Dados de Proteômica</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Processamento de dados de espectrometria de massas (LC-MS/MS), quantificação relativa/absoluta de proteínas, análise de modificações pós-traducionais (PTMs) e expressão diferencial proteica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sistemas" class="service-section mb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end border-bottom pb-3 mb-4 gap-2" style="border-color: var(--border-subtle) !important;">
+      <div>
+        <span class="badge-tech mb-2"><i class="bi bi-share"></i> CAT_02</span>
+        <h2 class="fw-bold h3 mb-1">Biologia de Sistemas</h2>
+        <p class="text-secondary small mb-0">Modelagem topológica de redes biológicas, regulons mestres e reposicionamento de fármacos.</p>
+      </div>
+      <span class="font-mono-tech small text-muted">05 serviços</span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_02.01</span>
+            <span class="badge-tech">ORA · GSEA</span>
+          </div>
+          <h5 class="fw-bold mb-2">Enriquecimento Funcional e Análise de Vias</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Análise de super-representação (ORA) e enriquecimento de conjuntos gênicos (GSEA) em bases ontológicas e metabólicas.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_02.02</span>
+            <span class="badge-tech">PPI · Graph Topology</span>
+          </div>
+          <h5 class="fw-bold mb-2">Redes de Interação Proteína-Proteína (PPI)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Construção e análise topológica de redes (centralidade, hubs, bottlenecks) para priorização de alvos terapêuticos.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_02.03</span>
+            <span class="badge-tech">RTN · SCENIC · WGCNA</span>
+          </div>
+          <h5 class="fw-bold mb-2">Inferência de Redes Regulatórias (GRNs) e Co-expressão</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Identificação de regulons, fatores de transcrição mestres (ex.: RTN, SCENIC) e módulos de co-expressão (WGCNA) associados a fenótipos clínicos ou experimentais.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_02.04</span>
+            <span class="badge-tech">Multi-Omics Fusion</span>
+          </div>
+          <h5 class="fw-bold mb-2">Integração Multi-ômica</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Fusão estatística e computacional de camadas de dados (genoma, transcriptoma, epigenoma, proteoma e metaboloma) para modelagem sistêmica de doenças.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_02.05</span>
+            <span class="badge-tech">Drug Repurposing</span>
+          </div>
+          <h5 class="fw-bold mb-2">Reposicionamento de Fármacos In Silico</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Análise de reversão de assinaturas transcricionais e perturbação de redes regulatórias para triagem de compostos candidatos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ciencia-dados" class="service-section mb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end border-bottom pb-3 mb-4 gap-2" style="border-color: var(--border-subtle) !important;">
+      <div>
+        <span class="badge-tech mb-2"><i class="bi bi-cpu"></i> CAT_03</span>
+        <h2 class="fw-bold h3 mb-1">Ciência de Dados Aplicada</h2>
+        <p class="text-secondary small mb-0">Aprendizado de máquina, modelos fundacionais, epidemiologia espacial e inferência causal.</p>
+      </div>
+      <span class="font-mono-tech small text-muted">06 serviços</span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_03.01</span>
+            <span class="badge-tech">ML · Feature Selection</span>
+          </div>
+          <h5 class="fw-bold mb-2">Aprendizado de Máquina (Machine Learning) e Modelagem Preditiva</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Desenvolvimento de modelos de classificação, regressão e seleção de características (feature selection) para diagnóstico, prognóstico clínico e estratificação de pacientes em matrizes de alta dimensionalidade.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_03.02</span>
+            <span class="badge-tech">GNN · Transformers · NLP</span>
+          </div>
+          <h5 class="fw-bold mb-2">Deep Learning e Modelos Fundacionais</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Aplicação de arquiteturas profundas (redes neurais de grafos, transformers, autoencoders) para predição de estruturas, integração multi-ômica, análise de imagens biológicas/médicas e processamento de linguagem natural (NLP) em literatura científica.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_03.03</span>
+            <span class="badge-tech">Cox · RSF · Kaplan-Meier</span>
+          </div>
+          <h5 class="fw-bold mb-2">Análise de Sobrevivência e Dados Clínico-Epidemiológicos</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Modelagem de tempo até o evento (Kaplan-Meier, regressão de Cox penalizada, Random Survival Forests) e integração de desfechos clínicos com dados moleculares.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_03.04</span>
+            <span class="badge-tech">DATASUS · GIS/SIG</span>
+          </div>
+          <h5 class="fw-bold mb-2">Epidemiologia Computacional e Análise Geoespacial (SIG)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Cruzamento de bases públicas de saúde (ex.: DATASUS), modelagem espacial, análise de redes viárias/acessibilidade e mapeamento de determinantes socioambientais de doenças.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_03.05</span>
+            <span class="badge-tech">LLMs · PubMed · KG</span>
+          </div>
+          <h5 class="fw-bold mb-2">Mineração de Textos e Extração Automatizada de Conhecimento</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Uso de LLMs e pipelines de NLP para triagem sistemática de artigos (PubMed), categorização automatizada de metadados e construção de grafos de conhecimento biomédico.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_03.06</span>
+            <span class="badge-tech">Mendelian Randomization</span>
+          </div>
+          <h5 class="fw-bold mb-2">Estatística Avançada e Inferência Causal</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Aplicação de métodos como Randomização Mendeliana, análise multivariada e modelagem hierárquica para distinguir correlação de causalidade em estudos observacionais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="design-experimental" class="service-section mb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end border-bottom pb-3 mb-4 gap-2" style="border-color: var(--border-subtle) !important;">
+      <div>
+        <span class="badge-tech mb-2"><i class="bi bi-rulers"></i> CAT_04</span>
+        <h2 class="fw-bold h3 mb-1">Design Experimental</h2>
+        <p class="text-secondary small mb-0">Planejamento amostral, controle de viés e elaboração de protocolos para editais e comitês.</p>
+      </div>
+      <span class="font-mono-tech small text-muted">04 serviços</span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_04.01</span>
+            <span class="badge-tech">Power Analysis</span>
+          </div>
+          <h5 class="fw-bold mb-2">Cálculo de Poder Estatístico e Tamanho Amostral</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Estimativa do número mínimo de réplicas biológicas e profundidade de sequenciamento (cobertura) necessários para detectar efeitos significativos.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_04.02</span>
+            <span class="badge-tech">Batch Control · Study Design</span>
+          </div>
+          <h5 class="fw-bold mb-2">Planejamento de Delineamento e Controle de Viés</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Estruturação de grupos experimentais, balanceamento de lotes (batch effects), randomização e definição de controles positivos/negativos.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_04.03</span>
+            <span class="badge-tech">Illumina · ONT · WES/WGS</span>
+          </div>
+          <h5 class="fw-bold mb-2">Especificação Técnica de Plataformas</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Definição da tecnologia de sequenciamento, espectrometria ou coleta de dados mais adequada ao orçamento e à pergunta científica (ex.: Illumina vs. Oxford Nanopore, bulk vs. single-cell, painéis alvo vs. exoma/genoma completo).</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_04.04</span>
+            <span class="badge-tech">SAP · Grants & Ethics</span>
+          </div>
+          <h5 class="fw-bold mb-2">Elaboração de Planos de Análise Estatística (SAP)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Redação da metodologia analítica e critérios de elegibilidade para submissão de projetos a agências de fomento, comitês de ética ou ensaios clínicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infraestrutura" class="service-section mb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end border-bottom pb-3 mb-4 gap-2" style="border-color: var(--border-subtle) !important;">
+      <div>
+        <span class="badge-tech mb-2"><i class="bi bi-hdd-stack"></i> CAT_05</span>
+        <h2 class="fw-bold h3 mb-1">Desenvolvimento de Bancos de Dados e Infraestrutura</h2>
+        <p class="text-secondary small mb-0">Engenharia de dados biológicos, aplicações web interativas, pipelines escaláveis e padrão FAIR.</p>
+      </div>
+      <span class="font-mono-tech small text-muted">05 serviços</span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_05.01</span>
+            <span class="badge-tech">PostgreSQL · DuckDB · Parquet</span>
+          </div>
+          <h5 class="fw-bold mb-2">Modelagem e Estruturação de Bancos Biológicos</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Criação de esquemas relacionais (PostgreSQL, MySQL) ou colunares/analíticos (DuckDB, Parquet) otimizados para grandes volumes de dados ômicos e metadados clínicos.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_05.02</span>
+            <span class="badge-tech">FastAPI · Streamlit · React</span>
+          </div>
+          <h5 class="fw-bold mb-2">Desenvolvimento de Portais Web e APIs</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Construção de interfaces interativas (Flask, FastAPI, Streamlit, React) e APIs RESTful para consulta, filtragem e download de dados pela comunidade científica.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_05.03</span>
+            <span class="badge-tech">Interactive Dashboards</span>
+          </div>
+          <h5 class="fw-bold mb-2">Dashboards Analíticos Interativos</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Criação de painéis dinâmicos para exploração visual de resultados (gráficos de vulcão, heatmaps, redes interativas e mapas epidemiológicos/geoespaciais).</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_05.04</span>
+            <span class="badge-tech">Nextflow · Snakemake · Docker</span>
+          </div>
+          <h5 class="fw-bold mb-2">Pipelines Reprodutíveis e Conteinerização</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Automatização de fluxos de trabalho em Nextflow ou Snakemake empacotados em Docker/Singularity para execução escalável em clusters HPC ou nuvem.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hub-card h-100 p-4 d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+            <span class="font-mono-tech small fw-semibold" style="color: var(--accent-primary);">CAT_05.05</span>
+            <span class="badge-tech">FAIR · GEO · SRA · Zenodo</span>
+          </div>
+          <h5 class="fw-bold mb-2">Curadoria e Padronização de Dados (FAIR)</h5>
+          <p class="text-secondary small mb-0 flex-grow-1">Limpeza, harmonização de metadados e adequação de conjuntos de dados aos princípios FAIR (Findable, Accessible, Interoperable, Reusable) para publicação em repositórios públicos (GEO, SRA, Zenodo).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Institutional CTA -->
+  <div class="hub-card p-4 p-lg-5" style="background: linear-gradient(135deg, #FFFFFF 0%, #F0FDFA 100%);">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-8">
+        <span class="badge-tech badge-emerald mb-2"><i class="bi bi-diagram-2"></i> COOPERAÇÃO TÉCNICO-CIENTÍFICA</span>
+        <h3 class="fw-bold mb-2">Estruturação de Projetos, Convênios e Propostas Técnicas</h3>
+        <p class="text-secondary mb-0">
+          O LBCD atua desde o delineamento experimental e redação de planos de análise estatística (SAP) para editais até o desenvolvimento de pipelines reprodutíveis, modelagem preditiva e entrega de plataformas interativas.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end d-flex flex-wrap gap-2 justify-content-lg-end">
+        <a href="softwares.html" class="btn btn-hub-outline">Ver Portfólio Técnico</a>
+        <a href="equipe.html" class="btn btn-hub-primary">Conhecer a Equipe</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer-hub py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center gy-2">
+      <div class="col-md-7 text-center text-md-start">
+        <span class="fw-semibold text-dark">LBCD</span> — Laboratório de Bioinformática e Ciências de Dados · Instituto de Ciências Biológicas — Universidade Federal do Pará (UFPA)
+      </div>
+      <!-- <div class="col-md-5 text-center text-md-end">
+        <span class="font-mono-tech small"> Supported by CAPES · CNPq · FAPESPA</span>
+      </div> -->
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
