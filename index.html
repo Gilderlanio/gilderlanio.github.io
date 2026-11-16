@@ -1,206 +1,349 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LBCD — Laboratório de Bioinformática e Ciências de Dados</title>
+  <title>LBCD — Bioinformatics and Data Science Laboratory</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-hub sticky-top py-2">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html" style="text-decoration: none;">
-    <div style="width: 60px;">
-      <img src="images/LBCD.png" alt="LBCD" class="img-fluid">
-    </div>
-  </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="index.html">
+      <img src="images/LBCD.png" alt="LBCD" style="height: 44px; width: auto;">
+      <!-- <div class="d-none d-sm-block">
+        <span class="fw-bold d-block text-dark" style="line-height: 1.1; font-size: 1.05rem;">LBCD</span>
+        <span class="font-mono-tech text-muted" style="font-size: 0.72rem;">ICB · UFPA</span>
+      </div> -->
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="linhas.html">Linhas de Pesquisa</a></li>
-        <li class="nav-item"><a class="nav-link" href="softwares.html">Softwares & BD</a></li>
-        <li class="nav-item"><a class="nav-link" href="artigos.html">Artigos</a></li>
-        <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+      <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="linhas.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link " href="softwares.html">Softwares & Databases</a></li>
+          <li class="nav-item"><a class="nav-link " href="artigos.html">Research Papers</a></li>
+          <li class="nav-item"><a class="nav-link " href="equipe.html">Research Team</a></li>
+          <li class="nav-item"><a class="nav-link " href="servicos.html">Services & Consulting</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1 class="display-5 fw-bold">Laboratório de Bioinformática e Ciências de Dados</h1>
-        <p class="lead">Desenvolvemos sistemas computacionais para integrar, analisar e sumarizar dados das ciências "ômicas" para compreender sistemas biológicos complexos e impulsionar descobertas que moldam o futuro da saúde.</p>
-        <p class="mb-4"><strong>Coordenação:</strong> Prof. Dr. Gilderlanio Santana de Araújo — Universidade Federal do Pará (UFPA)</p>
+<header class="hero-hub py-5 position-relative overflow-hidden">
 
-        <a href="linhas.html" class="btn btn-primary btn-lg me-2">Linhas de Pesquisa e Desenvolvimento</a>
-        <a href="softwares.html" class="btn btn-outline-primary btn-lg">Softwares e Bancos de Dados</a>
-
-      </div>
-      <div class="col-md-5">
-        <div class="card shadow-sm hero-card">
-          <div class="card-body">
-            <img style="width: 550px" src="images/LBCD.png">
-          </div>
+  <div class="container py-lg-3">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge-tech"><i class="bi bi-cpu"></i> BIOINFORMATICS &amp; DATA SCIENCE</span>
+          <span class="badge-tech badge-emerald"><i class="bi bi-unlock"></i> OPEN SCIENCE</span>
+        </div>
+        <h1 class="display-5 fw-bold tracking-tight mb-2" style="color: #0F172A;">
+          Laboratório de Bioinformática e Ciências de Dados (LBCD)
+        </h1>
+        <p class="font-mono-tech text-muted mb-3" style="font-size: 0.95rem;">
+           Laboratory of Bioinformatics and Data Science · Institute of Biological Sciences (ICB) · Federal University of Pará (UFPA)
+        </p>
+        <p class="text-secondary mb-4" style="font-size: 1.05rem;">
+          The Bioinformatics and Data Science Laboratory provides a dedicated environment to support scientific research by integrating high-performance computing infrastructure, large-scale data storage and processing resources, and specialized bioinformatics pipelines. Its activities encompass product development as well as the implementation and maintenance of software, web platforms, APIs, and scientific databases aimed at organizing, integrating, and exploring biological information.
+        </br>
+          By combining expertise in bioinformatics, data science, molecular biology, and computer science, the laboratory seeks to advance investigations into complex biological systems, uncover relevant patterns and associations, and generate knowledge from "omics" data. Our work contributes to strengthening interdisciplinary research, developing technological innovation solutions, advancing science, and training human resources.
+        </p>
+        <div class="p-3 rounded-3 mb-4" style="background-color: #FFFFFF; border: 1px solid var(--border-subtle);">
+          <span class="font-mono-tech small text-uppercase text-muted d-block">Coordination</span>
+          <strong class="text-dark">Prof. Dr. Gilderlanio Santana de Araújo</strong>
+        </br><span class="text-muted"> Federal University of Pará (UFPA)</span>
+          </br>
+          <p class="font-mono-tech text-muted mb-3" style="font-size: 0.95rem;">
+          Computer Scientist · Bioinformatician · CNPq Researcher · Graduate Program in Genetics and Molecular Biology (PPGBM) · Member of Brazilian Society of Genetics (SBG)· 
+          </p>
+        </div>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="linhas.html" class="btn btn-hub-primary">
+            <i class="bi bi-diagram-3 me-2"></i>Research and Development
+          </a>
+          <a href="softwares.html" class="btn btn-hub-outline">
+            <i class="bi bi-terminal me-2"></i>Softwares and Databases
+          </a>
         </div>
       </div>
+
+      <div class="col-lg-5">
+        <!-- <div class="hub-card p-4 text-center mb-3">
+          <img src="images/LBCD.png" alt="LBCD Logo" class="img-fluid mx-auto d-block" style="max-height: 220px;">
+        </div> -->
+        <div class="hero-terminal-box">
+        <div class="d-flex align-items-center gap-2 mb-2 pb-2 border-bottom border-secondary">
+          <span class="rounded-circle d-inline-block" style="width:10px;height:10px;background:#EF4444;"></span>
+          <span class="rounded-circle d-inline-block" style="width:10px;height:10px;background:#F59E0B;"></span>
+          <span class="rounded-circle d-inline-block" style="width:10px;height:10px;background:#10B981;"></span>
+          <span class="ms-2 text-secondary small">lbcd@ufpa:~/hub-status</span>
+        </div>
+        <div class="small">
+          <div><span style="color:#10B981;">$</span> lbcd --summary</div>
+          <div class="text-slate-300 mt-1">&gt; Research Lines: <span style="color:#5EEAD4;">04 Core Areas</span></div>
+          <div class="text-slate-300">&gt; Tools &amp; DBs: <span style="color:#5EEAD4;">08 Open Platforms &amp; APIs</span></div>
+          <div class="text-slate-300">&gt; Peer-Reviewed Papers: <span style="color:#5EEAD4;">37+ Publications (2015–2026)</span></div>
+
+          <div class="mt-2"><span style="color:#10B981;">$</span> lbcd --services</div>
+          <div class="text-slate-300 mt-1">&gt; <span style="color:#34D399;">Genomics &amp; Transcriptomics</span></div>
+          <div class="text-slate-300">&gt; <span style="color:#34D399;">Proteomics</span></div>
+          <div class="text-slate-300">&gt; <span style="color:#34D399;">Data Science &amp; DB Engineering</span></div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container py-5">
+  <!-- Research Lines Summary -->
+  <section class="mb-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+      <div>
+        <span class="font-mono-tech small text-uppercase" style="color: var(--accent-primary);">01 // SCIENTIFIC DOMAINS</span>
+        <h2 class="fw-bold mb-0">Research</h2>
+      </div>
+      <a href="linhas.html" class="text-decoration-none fw-medium" style="color: var(--accent-primary);">
+        Learn more <i class="bi bi-arrow-right"></i>
+      </a>
     </div>
 
-    <hr class="my-5">
-
-    <h2 class="mb-4">Linhas de Pesquisa</h2>
+    
 <div class="row g-4">
 
-  <div class="col-md-6 col-lg-3">
-    <div class="card h-100 research-card">
-      <div class="card-body">
-        <h5 class="card-title">Genômica Humana</h5>
-        <p class="card-text">
-          Estudo de variantes genéticas associadas a doenças complexas, predição de risco e análise populacional.
-        </p>
+  <!-- LINE 01 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="hub-card h-100 p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="badge-tech">LINE_01</span>
+        <i class="bi bi-dna fs-4" style="color: var(--accent-primary);"></i>
       </div>
+      <h5 class="fw-bold mb-3">Human Genomics and Complex Diseases</h5>
     </div>
   </div>
 
-  <div class="col-md-6 col-lg-3">
-    <div class="card h-100 research-card">
-      <div class="card-body">
-        <h5 class="card-title">Biologia de Sistemas</h5>
-        <p class="card-text">
-          Modelagem de redes biológicas, inferência de interações gênicas e identificação de padrões emergentes.
-        </p>
+  <!-- LINE 02 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="hub-card h-100 p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="badge-tech">LINE_02</span>
+        <i class="bi bi-diagram-3 fs-4" style="color: var(--accent-primary);"></i>
       </div>
+      <h5 class="fw-bold mb-3">Systems Biology and Complex Diseases</h5>
     </div>
   </div>
 
-  <div class="col-md-6 col-lg-3">
-    <div class="card h-100 research-card">
-      <div class="card-body">
-        <h5 class="card-title">Bioinformática e Integração Multi-ômica</h5>
-        <p class="card-text">
-          Desenvolvimento de pipelines, softwares e bancos de dados para análise integrada de dados genômicos,
-          transcriptômicos e proteômicos utilizando abordagens de aprendizado de máquina para identificação de biomarcadores.
-        </p>
+  <!-- LINE 03 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="hub-card h-100 p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="badge-tech">LINE_03</span>
+        <i class="bi bi-database-gear fs-4" style="color: var(--accent-primary);"></i>
       </div>
+      <h5 class="fw-bold mb-3">Bioinformatics, Multi-omics Integration, and Biological Databases</h5>
+    </div>
+  </div>
+
+  <!-- LINE 04 -->
+  <div class="col-md-6 col-lg-4">
+    <div class="hub-card h-100 p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="badge-tech">LINE_04</span>
+        <i class="bi bi-graph-up-arrow fs-4" style="color: var(--accent-primary);"></i>
+      </div>
+      <h5 class="fw-bold mb-3">Data Science</h5>
     </div>
   </div>
 
 </div>
 
+  </section>
 
+  <hr class="my-5" style="border-color: var(--border-subtle);">
 
-
-
-    <hr class="my-5">
-
-    <h4 class="mb-3">Projetos</h4>
+  <!-- Featured Software & Databases Carousel -->
+  <section>
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+      <div>
+        <span class="font-mono-tech small text-uppercase" style="color: var(--accent-primary);">02 // OPEN-SOURCE &amp; DATA INFRASTRUCTURE</span>
+        <h2 class="fw-bold mb-0">Featured Softwares &amp; Databases</h2>
+      </div>
+      <a href="softwares.html" class="text-decoration-none fw-medium" style="color: var(--accent-primary);">
+        Explore all 8 tools <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
 
     <div id="softwareCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner pb-4">
 
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="DANCE"></button>
-      <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="1" aria-label="DeepHP"></button>
-      <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="2" aria-label="mtDNA-network"></button>
-      <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="3" aria-label="Orí-Gen"></button>
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/ORIGEN_LOGO.svg" alt="Orí-Gen">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech badge-emerald mx-auto mb-2">INCLUSIVE GENOMICS</span>
+                  <h5 class="fw-bold">Orí-Gen</h5>
+                  <p class="text-secondary small flex-grow-1">Inclusive genomics initiative to reduce health inequalities.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://lbcd.ufpa.br/origen/" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/humanpopgen.png" alt="HumanPopGen API">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">REST API · POPGEN</span>
+                  <h5 class="fw-bold">HumanPopGen API</h5>
+                  <p class="text-secondary small flex-grow-1">Fast and scalable extraction of genetic variant frequencies across populations.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://lbcd.ufpa.br/humanpopgen/api" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/mtdna-pipeline.png" alt="mtDNA variant calling pipeline">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">PIPELINE · ZENODO</span>
+                  <h5 class="fw-bold">mtDNA variant calling pipeline</h5>
+                  <p class="text-secondary small flex-grow-1">Detects mitochondrial DNA mutations from sequencing data.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://zenodo.org/records/16617240" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/neurodb_LOGO.png" alt="NeuroRegulonDB">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">WEB APP · DATABASE</span>
+                  <h5 class="fw-bold">NeuroRegulonDB</h5>
+                  <p class="text-secondary small flex-grow-1">Dashboard for DEGs and MR-TF analysis in Alzheimer’s networks.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://lbcd.ufpa.br/neuroregdb/" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/ebvhsa.png" alt="EBV–HSA microRNA DB">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">REGULATORY DB</span>
+                  <h5 class="fw-bold">EBV–HSA microRNA DB</h5>
+                  <p class="text-secondary small flex-grow-1">Network resource for Epstein–Barr virus–host microRNA interactions.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://lbcd.ufpa.br/ebvhsa/" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/DANCE_LOGO.png" alt="DANCE">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">GWAS · NETWORKS</span>
+                  <h5 class="fw-bold">DANCE</h5>
+                  <p class="text-secondary small flex-grow-1">Disease-Ancestry Networks integrating GWAS and population genetics.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://lbcd.ufpa.br/dance/" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/DEPPHP_LOGO.png" alt="DeepHP">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">DATASET · 394K IMAGES</span>
+                  <h5 class="fw-bold">DeepHP</h5>
+                  <p class="text-secondary small flex-grow-1">Large histopathological image dataset for H. pylori detection.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://zenodo.org/records/8117177" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="hub-card h-100 d-flex flex-column">
+                <div class="software-logo-box">
+                  <img src="images/MTDNA+LOGO.png" alt="mtDNA-network">
+                </div>
+                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                  <span class="badge-tech mx-auto mb-2">GRAPH DATABASE</span>
+                  <h5 class="fw-bold">mtDNA-network</h5>
+                  <p class="text-secondary small flex-grow-1">Graph tools linking mitochondrial variants to complex diseases.</p>
+                  <a class="btn btn-sm btn-hub-outline mt-2" href="https://apps.lghm.ufpa.br/mtdna/" target="_blank" rel="noopener noreferrer">Read more <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center gap-3 mt-2">
+        <button class="btn btn-sm btn-hub-outline" type="button" data-bs-target="#softwareCarousel" data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i> Prev
+        </button>
+        <div class="carousel-indicators position-static m-0">
+          <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="0" class="active bg-dark" aria-current="true"></button>
+          <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="1" class="bg-dark"></button>
+          <button type="button" data-bs-target="#softwareCarousel" data-bs-slide-to="2" class="bg-dark"></button>
+        </div>
+        <button class="btn btn-sm btn-hub-outline" type="button" data-bs-target="#softwareCarousel" data-bs-slide="next">
+          Next <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
     </div>
+  </section>
+</main>
 
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-
-      <!-- DANCE -->
-      <div class="carousel-item active">
-        <div class="card d-flex flex-md-row align-items-center justify-content-center p-4">
-          <img src="images/DANCE_LOGO.png" class="img-fluid mx-auto mx-md-0 me-md-4" alt="DANCE" style="width: 150px;">
-          <div class="card-body">
-            <h5 class="card-title">DANCE</h5>
-            <p class="card-text">
-              Disease-Ancestry Networks. GWAS-hits, human complex phenotypes and population genetic variability
-              in a Network-based approach.
-            </p>
-            <a class="btn btn-sm btn-outline-primary" href="https://www.ldgh.com.br/dance">Repositório/Docs</a>
-          </div>
-        </div>
+<footer class="footer-hub py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center gy-2">
+      <div class="col-md-7 text-center text-md-start">
+        <span class="fw-semibold text-dark">LBCD</span> — Bioinformatics and Data Science Laboratory · Institute of Biological Sciences — Federal University of Pará (UFPA)
       </div>
-
-      <!-- DeepHP -->
-      <div class="carousel-item">
-        <div class="card d-flex flex-md-row align-items-center justify-content-center p-4">
-          <img src="images/DEPPHP_LOGO.png" class="img-fluid mx-auto mx-md-0 me-md-4" alt="DeepHP" style="width: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">DeepHP</h5>
-            <p class="card-text">
-              DeepHP, a meticulously curated public collection of histopathological images. The DeepHP database
-              encompasses a vast collection of 394,926 histopathological images, out of which 111k were annotated
-              as Helicobacter pylori positive and 283k as Helicobacter pylori-negative.
-            </p>
-            <a class="btn btn-sm btn-outline-primary" href="https://zenodo.org/records/8117177">Repositório/Docs</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- mtDNA-network -->
-      <div class="carousel-item">
-        <div class="card d-flex flex-md-row align-items-center justify-content-center p-4">
-          <img src="images/MTDNA+LOGO.png" class="img-fluid mx-auto mx-md-0 me-md-4" alt="mtDNA-network" style="width: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">mtDNA-network</h5>
-            <p class="card-text">
-              Explore the relationship between mitochondrial DNA variants and complex diseases through our interactive
-              tools and graph-based databases to better understand the connections between genes and mitochondrial DNA
-              variants behind complex diseases.
-            </p>
-            <a class="btn btn-sm btn-outline-primary" href="https://zenodo.org/records/8117177">Repositório/Docs</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Orí-Gen -->
-      <div class="carousel-item">
-        <div class="card d-flex flex-md-row align-items-center justify-content-center p-4">
-          <img src="images/ORIGEN_LOGO.png" class="img-fluid mx-auto mx-md-0 me-md-4" alt="Ori-Gen" style="width: 150px;">
-          <div class="card-body">
-            <h5 class="card-title">Orí-Gen</h5>
-            <p class="card-text">
-              Increasing Afro-descendants’ participation in genetic research is not only a scientific issue but also an
-              ethical and social one. Inclusive genomics initiatives are essential to reducing historical health inequalities
-              and building more equitable medicine.
-            </p>
-            <a class="btn btn-sm btn-outline-primary" href="https://zenodo.org/records/8117177">Repositório/Docs</a>
-          </div>
-        </div>
-      </div>
-
+      <!-- <div class="col-md-5 text-center text-md-end">
+        <span class="font-mono-tech small"> Supported by CAPES · CNPq · FAPESPA</span>
+      </div> -->
     </div>
-
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#softwareCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#softwareCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
-  </div>
-
-
-
-  </div>
-</header>
-
-<footer class="py-4 mt-5 bg-white">
-  <div class="container text-center">
-    <small class="text-muted">© LBCD — Laboratório de Bioinformática e Ciências de Dados — UFPA</small>
   </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
